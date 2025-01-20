@@ -1,26 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
-import Navbar from "./components/navbar.js";
-import Hero from "./components/hero.js";
-import TreatmentsAndCare from "./components/TreatmentsAndCare.js";
-import InstagramSection from "./components/instagram.js";
-import Calendarhit from "./components/calendarhit.js";
-import Footer from "./components/footer.js";
+import dynamic from "next/dynamic";
+
+// Importaciones dinámicas (con ssr deshabilitado para asegurar que corren en cliente)
+const Navbar = dynamic(() => import("./components/navbar"), { ssr: false });
+const Hero = dynamic(() => import("./components/hero"), { ssr: false });
+const AbrahamSection = dynamic(() => import("./components/AbrahamSection"), { ssr: false });
+const TreatmentsAndCare = dynamic(() => import("./components/TreatmentsAndCare"), { ssr: false });
+const Comunidad = dynamic(() => import("./components/comunidad"), { ssr: false });
+const InstagramSection = dynamic(() => import("./components/instagram"), { ssr: false });
+const Calendarhit = dynamic(() => import("./components/calendarhit"), { ssr: false });
+const Footer = dynamic(() => import("./components/footer"), { ssr: false });
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleLoad = () => {
-      // Garantizar al menos 1 segundo de pantalla de carga
       setTimeout(() => {
         setLoading(false);
-      }, 1000); // 1000 ms = 1 segundo
+      }, 2000);
     };
 
     if (document.readyState === "complete") {
-      handleLoad(); // Si la página ya está cargada
+      handleLoad();
     } else {
-      window.addEventListener("load", handleLoad); // Escuchar el evento 'load'
+      window.addEventListener("load", handleLoad);
     }
 
     return () => window.removeEventListener("load", handleLoad);
@@ -30,24 +35,24 @@ export default function Home() {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-[#3C5954] z-50">
         <img
-          src="/assets/LogoLoading.svg" // Reemplaza con la ruta de tu logo
+          src="/assets/LogoLoading.svg"
           alt="Loading..."
-          className="w-[50vh]" // Clase opcional para animación
+          className="w-[50vh]"
         />
       </div>
     );
   }
 
   return (
-    <>
-    <div className="overglow-hidden">
+    <div className="overflow-hidden bg-[#131313]">
       <Navbar />
       <Hero />
+      <AbrahamSection />
       <TreatmentsAndCare />
+      <Comunidad />
       <InstagramSection />
       <Calendarhit />
       <Footer />
-      </div>
-    </>
+    </div>
   );
 }

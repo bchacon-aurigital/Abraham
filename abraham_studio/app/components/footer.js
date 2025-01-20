@@ -8,17 +8,13 @@ const Footer = () => {
     return (
         <>
             <footer className="relative text-white w-full">
-                {/* Background image overlay */}
                 <div
                     className="absolute inset-0 w-full
                  bg-cover bg-center bg-[url('/assets/FooterBG.avif')]"
                 />
 
-                {/* Content container */}
                 <div className="relative container mx-auto px-4 md:px-8 py-8">
-                    {/* Top section with contact info and navigation */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-                        {/* Left: Contact Information */}
                         <div className="space-y-2 text-sm lg:pl-14 mx-auto">
                             <p className="items-center gap-2 text-center lg:text-start font-futura-medium">
                                 Costa Rica, San José, Escazú, San Rafael (Waze)
@@ -34,7 +30,6 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        {/* Center: Logo */}
                         <div className="flex flex-col items-center justify-center overflow-hidden md:overflow-visible">
                             <img
                                 src="/assets/LogoLoading.svg"
@@ -97,7 +92,6 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Right: Navigation */}
                         <div className="flex flex-col md:flex-row items-center justify-center lg:pr-24">
                             <button className="bg-[#1E3F3F] hover:bg-[#2A5757] px-4 py-2 rounded flex items-center gap-2 transition-colors">
                                 <FaWhatsapp size={18} />
@@ -108,7 +102,6 @@ const Footer = () => {
                 </div>
             </footer>
 
-            {/* Div debajo del footer */}
             <div className="w-full h-5 bg-[#2A5757]">
                 <a
                     href="https://aurigital.com"

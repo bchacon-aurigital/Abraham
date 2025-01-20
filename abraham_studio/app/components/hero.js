@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaWhatsapp } from "react-icons/fa";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
@@ -28,14 +27,14 @@ export default function Hero() {
       aosElements.forEach((element) => {
         element.classList.add("aos-animate");
       });
-    }, 3000);
+    }, 5000);
 
     animate(
       "span",
       { opacity: 1, y: 0 },
       {
         duration: 2,
-        delay: stagger(0.1),
+        delay: stagger(0.8),
       }
     );
   }, [animate]);
@@ -44,7 +43,7 @@ export default function Hero() {
     <ParallaxProvider>
       <section className="relative w-full h-screen overflow-hidden">
         <video
-          className="absolute inset-0 w-full h-full object-cover z-[-2]"
+          className="absolute inset-0 w-full h-full object-cover z-[0]"
           src="/assets/hero-video.webm"
           autoPlay
           loop
@@ -52,7 +51,7 @@ export default function Hero() {
           playsInline
         />
 
-        <div className="absolute inset-0 bg-black/40 z-[-1]" />
+        <div className="absolute inset-0 bg-black/40 z-[0]" />
 
         <div className="relative flex flex-col items-center justify-center w-full h-full text-center px-4 md:px-8">
           <div
