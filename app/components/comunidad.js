@@ -1,9 +1,17 @@
 "use client";
+import { useState } from "react";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import Link from "next/link";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 export default function comunidad() {
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [iframeSrc, setIframeSrc] = useState("");
+
+    const openModalWithUrl = (url) => {
+        setIframeSrc(url);
+        setModalOpen(true);
+    };
 
     return (
         <>
@@ -82,32 +90,42 @@ export default function comunidad() {
                         </div>
                         <div className="w-full h-full row-span-2">
                             <div className="grid grid-col-1 grid-rows-3 h-full w-[95%] mx-auto">
-                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem]">
+                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem] cursor-pointer"
+                                    onClick={() => openModalWithUrl("https://geo.dailymotion.com/player.html?video=x907jng")}>
                                     <div className="h-full w-full bg-cover bg-center bg-[url('/assets/medios1.avif')] " />
                                     <div className="flex h-full justify-center flex-col px-2">
                                         <h1 className="font-futura-medium font-[600] tracking-wide mb-2 text-[#707070] text-xs">Buen Dia</h1>
-                                        <p className="font-cp-regular font-[600] text-xs">Ideas de regalos para papá: cera y gel para el cabello</p>
+                                        <p className="font-cp-regular font-[600] text-xs">
+                                            Ideas de regalos para papá: cera y gel para el cabello
+                                        </p>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem]">
+
+                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem] cursor-pointer"
+                                    onClick={() => openModalWithUrl("https://geo.dailymotion.com/player.html?video=x80ai4o")}>
                                     <div className="h-full w-full bg-cover bg-center bg-[url('/assets/medios2.avif')] " />
                                     <div className="flex h-full justify-center flex-col px-2">
                                         <h1 className="font-futura-medium font-[600] tracking-wide mb-2 text-[#707070] text-xs">Buen Dia</h1>
-                                        <p className="font-cp-regular font-[600] text-xs">Le ayudamos a mantener su barba impecable</p>
+                                        <p className="font-cp-regular font-[600] text-xs">
+                                            Le ayudamos a mantener su barba impecable
+                                        </p>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem]">
+
+                                <div className="grid grid-cols-2 h-full w-full bg-[#010C00] rounded-md max-h-[6rem] cursor-pointer"
+                                    onClick={() => openModalWithUrl("https://www.youtube.com/embed/OFceixDw5nQ?si=6NWL-bFWgwsjoHd4")}>
                                     <div className="h-full w-full bg-cover bg-top bg-[url('/assets/medios3.avif')] " />
                                     <div className="flex h-full justify-center flex-col px-2">
                                         <h1 className="font-futura-medium font-[600] tracking-wide mb-2 text-[#707070] text-xs">Barber Show</h1>
-                                        <p className="font-cp-regular font-[600] text-xs">Domingo Arguello - Henry precise - Abraham corella. ep 3</p>
+                                        <p className="font-cp-regular font-[600] text-xs">
+                                            Domingo Arguello - Henry precise - Abraham corella. ep 3
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div className="col-span-1 md:col-span-7 lg:col-span-5 row-span-2 md:row-span-1 relative group bg-[#334946] rounded-md min-h-[7rem]" data-aos="fade-up-right">
                     <div className="flex w-full h-full justify-between px-10 items-center">
                         <h1 className="uppercase font-cp-regular font-[800] text-[0.6rem] md:text-2xl tracking-widest text-md mb-2 md:max-w-[30%]">Conecta por medio de</h1>
@@ -134,6 +152,28 @@ export default function comunidad() {
                     </div>
                 </div>
             </div>
+            {isModalOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="relative bg-[#72140A] rounded-md p-6 w-full max-w-3xl">
+                        <button
+                            onClick={() => setModalOpen(false)}
+                            className="absolute -top-1 right-0 text-4xl font-bold text-[#D5A153]"
+                        >
+                            &times;
+                        </button>
+                        <div className="w-full h-0 pb-[56.25%] relative">
+                            <iframe
+                                src={iframeSrc}
+                                title="Contenido del iframe"
+                                className="absolute top-0 left-0 w-full h-full"
+                                frameBorder="0"
+                                allowFullScreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     );
 }

@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <nav className="z-30 absolute bg-[#72140A] w-full py-5 md:py-0 md:pt-12 md:pb-2" data-aos="fade-down">
-            <div className="flex items-center justify-center space-x-1 md:space-x-12 mx-5">
+            <div className="flex items-center justify-center space-x-1 md:space-x-12 mx-5 gap-4">
                 <Link
                     href="#Abraham"
                     className="text-white text-[0.5rem] md:text-sm uppercase hover:opacity-80 font-futura-medium tracking-widest"
@@ -39,7 +39,7 @@ export default function Navbar() {
                             alt="Bgicon7"
                             width={180}
                             height={120}
-                            className="object-contain cursor-pointer"
+                            className="object-contain cursor-pointer w-36 md:w-auto"
                         />
                     </Link>
                 </div>
