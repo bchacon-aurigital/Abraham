@@ -34,7 +34,7 @@ export default function TreatmentsAndCare() {
 
     return (
         <>
-            <h1 className=" mb-5 text-3xl md:text-4xl font-cp-regular font-[800] tracking-[0.4rem] uppercase text-center mx-auto">
+            <h1 id="Servicios" className=" mb-5 text-3xl md:text-4xl font-cp-regular font-[800] tracking-[0.4rem] uppercase text-center mx-auto">
                 tratamientosy cuidados
             </h1>
             <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-40 md:grid-rows-9 gap-6 w-full h-[90rem] md:h-[57em] p-4 mx-auto max-w-7xl">
@@ -42,16 +42,17 @@ export default function TreatmentsAndCare() {
                     className="col-span-2 row-span-6 md:row-span-4 relative group text-white font-bold"
                     onMouseEnter={() => handleMouseEnter(videoRef1)}
                     onMouseLeave={() => handleMouseLeave(videoRef1)}
+                    data-aos="fade-down"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
                         ref={videoRef1}
                         className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
                         style={{ objectPosition: "50% 20%" }}
-                        loop           
+                        loop
                         muted
                         playsInline
-                        preload="auto"  
+                        preload="auto"
                         src="/assets/service1.webm"
                     />
                     <div className="absolute bottom-0 z-10 p-4">
@@ -85,6 +86,7 @@ export default function TreatmentsAndCare() {
                     className="col-span-1 row-span-7 md:row-span-5 relative group text-white"
                     onMouseEnter={() => handleMouseEnter(videoRef2)}
                     onMouseLeave={() => handleMouseLeave(videoRef2)}
+                    data-aos="fade-down-right"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
@@ -126,6 +128,7 @@ export default function TreatmentsAndCare() {
                     className="col-span-1 row-span-7 md:row-span-5 relative group text-white font-bold"
                     onMouseEnter={() => handleMouseEnter(videoRef3)}
                     onMouseLeave={() => handleMouseLeave(videoRef3)}
+                    data-aos="fade-down-left"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
@@ -167,6 +170,7 @@ export default function TreatmentsAndCare() {
                     className="col-span-1 row-span-7 md:row-span-5 relative group text-white font-bold"
                     onMouseEnter={() => handleMouseEnter(videoRef4)}
                     onMouseLeave={() => handleMouseLeave(videoRef4)}
+                    data-aos="fade-up-right"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
@@ -208,6 +212,7 @@ export default function TreatmentsAndCare() {
                     className="col-span-1 row-span-7 md:row-span-5 relative group text-white font-bold"
                     onMouseEnter={() => handleMouseEnter(videoRef5)}
                     onMouseLeave={() => handleMouseLeave(videoRef5)}
+                    data-aos="fade-up-left"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
@@ -249,6 +254,7 @@ export default function TreatmentsAndCare() {
                     className="col-span-2 row-span-6 md:row-span-4 relative group text-white font-bold"
                     onMouseEnter={() => handleMouseEnter(videoRef6)}
                     onMouseLeave={() => handleMouseLeave(videoRef6)}
+                    data-aos="fade-up"
                 >
                     <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
                     <video
@@ -288,7 +294,7 @@ export default function TreatmentsAndCare() {
             </div>
             <div className="flex justify-center mb-5">
                 <Link
-                    href="/agendar"
+                    href="#Calendarhit"
                     data-aos="fade-up"
                     data-aos-delay="1000"
                     data-aos-duration="1500"
@@ -297,7 +303,8 @@ export default function TreatmentsAndCare() {
                      tracking-widest font-cp-regular opacity-0 imghvr-shutter-in-out-diag-1 z-10 mx-auto"
                 >
                     <p className="z-30">AGENDA UNA CITA</p>
-                </Link></div>
+                </Link>
+            </div>
         </>
     );
 }

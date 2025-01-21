@@ -39,31 +39,31 @@ const Footer = () => {
                             <div className="border-b-[0.5px] border-white/60 pb-6 px-[30%]">
                                 <nav className="flex gap-3 md:gap-8 text-xs">
                                     <a
-                                        href="/inicio"
+                                        href="/"
                                         className="hover:text-[#D5A153] transition-colors font-futura-medium"
                                     >
                                         Inicio
                                     </a>
                                     <a
-                                        href="/abraham"
+                                        href="#Abraham"
                                         className="hover:text-[#D5A153] transition-colors font-futura-medium"
                                     >
                                         Abraham
                                     </a>
                                     <a
-                                        href="/servicios"
+                                        href="#Servicios"
                                         className="hover:text-[#D5A153] transition-colors font-futura-medium"
                                     >
                                         Servicios
                                     </a>
                                     <a
-                                        href="/comunidad"
+                                        href="#Comunidad"
                                         className="hover:text-[#D5A153] transition-colors font-futura-medium"
                                     >
                                         Comunidad
                                     </a>
                                     <a
-                                        href="/agenda"
+                                        href="#Calendarhit"
                                         className="hover:text-[#D5A153] transition-colors font-futura-medium"
                                     >
                                         Agenda
@@ -72,19 +72,19 @@ const Footer = () => {
                             </div>
                             <div className="flex justify-center gap-10 mt-8">
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/abraham_corella/#"
                                     className="hover:text-[#D5A153] transition-colors"
                                 >
                                     <AiFillInstagram size={22} />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://www.facebook.com/abraham.corelladuran.5/"
                                     className="hover:text-[#D5A153] transition-colors"
                                 >
                                     <FaFacebookSquare size={18} />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://api.whatsapp.com/send?phone=50684249981"
                                     className="hover:text-[#D5A153] transition-colors"
                                 >
                                     <FaWhatsappSquare size={18} />
@@ -93,10 +93,15 @@ const Footer = () => {
                         </div>
 
                         <div className="flex flex-col md:flex-row items-center justify-center lg:pr-24">
-                            <button className="bg-[#1E3F3F] hover:bg-[#2A5757] px-4 py-2 rounded flex items-center gap-2 transition-colors">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=50684249981"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-[#1E3F3F] hover:bg-[#2A5757] px-4 py-2 rounded flex items-center gap-2 transition-colors"
+                            >
                                 <FaWhatsapp size={18} />
                                 Habla conmigo
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

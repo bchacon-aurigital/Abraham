@@ -7,7 +7,7 @@ export default function comunidad() {
 
     return (
         <>
-            <div className="py-20 grid grid-cols-1 md:grid-cols-7 md:grid-rows-13 gap-6 w-full lg:h-[100rem] p-4 mx-auto max-w-7xl">
+            <div id="Comunidad" className="py-20 grid grid-cols-1 md:grid-cols-7 md:grid-rows-13 gap-6 w-full lg:h-[100rem] p-4 mx-auto max-w-7xl" data-aos="fade-down">
                 <ParallaxProvider>
                     <div className="col-span-1 md:col-span-7 row-span-1 md:row-span-10 relative group rounded-md
                     bg-cover bg-bottom lg:bg-[url('/assets/BgCard1.avif')] z-0">
@@ -26,7 +26,7 @@ export default function comunidad() {
                                         Sábado <br />
                                         10:00a.m. a 5:00p.m.</p>
                                     <Link
-                                        href="/agendar"
+                                        href="#Calendarhit"
                                         data-aos="fade-up"
                                         className="inline-block mt-3 bg-[#72140A] text-white uppercase p-3
                                         rounded-md hover:bg-[#5C1007] transition-colors drop-shadow-lg
@@ -46,7 +46,7 @@ export default function comunidad() {
                                     Sábado <br />
                                     10:00a.m. a 5:00p.m.</p>
                                 <Link
-                                    href="/agendar"
+                                    href="#Calendarhit"
                                     data-aos="fade-up"
                                     className="inline-block mt-3 bg-[#72140A] text-white uppercase p-3
                                         rounded-md hover:bg-[#5C1007] transition-colors drop-shadow-lg
@@ -60,7 +60,7 @@ export default function comunidad() {
                     </div>
                 </ParallaxProvider>
 
-                <div className="col-span-1 md:col-span-7 lg:col-span-5 row-span-3 md:row-span-2 relative group bg-[#334946] rounded-md min-h-[36rem] md:min-h-[20rem] lg:min-h-[2rem]">
+                <div className="col-span-1 md:col-span-7 lg:col-span-5 row-span-3 md:row-span-2 relative group bg-[#334946] rounded-md min-h-[36rem] md:min-h-[20rem] lg:min-h-[2rem]" data-aos="fade-right">
                     <div className="grid grid-cols-1 md:grid-cols-2 h-full ">
                         <div className="flex h-full justify-center flex-col px-12 py-6 md:py-0">
                             <h1 className="font-cp-regular font-[600] tracking-wide mb-4 text-xl">EL SPOT</h1>
@@ -74,7 +74,7 @@ export default function comunidad() {
                     </div>
                 </div>
 
-                <div className="col-span-1 md:col-span-7 lg:col-span-2 row-span-3 md:row-span-3 relative group bg-[#72140A] rounded-md min-h-[30rem] lg:min-h-0">
+                <div className="col-span-1 md:col-span-7 lg:col-span-2 row-span-3 md:row-span-3 relative group bg-[#72140A] rounded-md min-h-[30rem] lg:min-h-0" data-aos="fade-left">
                     <div className="grid grid-cols-1 grid-rows-3 h-full">
                         <div className="row-span-1 flex h-full justify-center flex-col px-6 py-6 md:py-0">
                             <h1 className="font-cp-regular font-[600] tracking-wide mb-4 text-xl">EN LOS MEDIOS</h1>
@@ -108,24 +108,24 @@ export default function comunidad() {
                     </div>
                 </div>
 
-                <div className="col-span-1 md:col-span-7 lg:col-span-5 row-span-2 md:row-span-1 relative group bg-[#334946] rounded-md min-h-[7rem]">
+                <div className="col-span-1 md:col-span-7 lg:col-span-5 row-span-2 md:row-span-1 relative group bg-[#334946] rounded-md min-h-[7rem]" data-aos="fade-up-right">
                     <div className="flex w-full h-full justify-between px-10 items-center">
                         <h1 className="uppercase font-cp-regular font-[800] text-[0.6rem] md:text-2xl tracking-widest text-md mb-2 md:max-w-[30%]">Conecta por medio de</h1>
                         <div className="flex flex-row gap-2 md:gap-10">
                             <a
-                                href="#"
+                                href="https://www.instagram.com/abraham_corella/#"
                                 className="hover:text-[#D5A153] transition-colors"
                             >
                                 <AiFillInstagram size={60} />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.facebook.com/abraham.corelladuran.5/"
                                 className="hover:text-[#D5A153] transition-colors"
                             >
                                 <FaFacebookSquare size={58} />
                             </a>
                             <a
-                                href="#"
+                                href="https://api.whatsapp.com/send?phone=50684249981"
                                 className="hover:text-[#D5A153] transition-colors"
                             >
                                 <FaWhatsappSquare size={58} />

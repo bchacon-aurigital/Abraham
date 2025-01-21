@@ -19,14 +19,14 @@ export default function Navbar() {
         <nav className="z-30 absolute bg-[#72140A] w-full py-5 md:py-0 md:pt-12 md:pb-2" data-aos="fade-down">
             <div className="flex items-center justify-center space-x-1 md:space-x-12 mx-5">
                 <Link
-                    href="/abraham"
+                    href="#Abraham"
                     className="text-white text-[0.5rem] md:text-sm uppercase hover:opacity-80 font-futura-medium tracking-widest"
                 >
                     ABRAHAM
                 </Link>
 
                 <Link
-                    href="/servicios"
+                    href="#Servicios"
                     className="text-white text-[0.5rem] md:text-sm uppercase hover:opacity-80 font-futura-medium tracking-widest"
                 >
                     SERVICIOS
@@ -45,14 +45,14 @@ export default function Navbar() {
                 </div>
 
                 <Link
-                    href="/comunidad"
+                    href="#Comunidad"
                     className="text-white text-[0.5rem] md:text-sm uppercase hover:opacity-80 font-futura-medium tracking-widest"
                 >
                     COMUNIDAD
                 </Link>
 
                 <Link
-                    href="/agenda"
+                    href="#Calendarhit"
                     className="text-white text-[0.5rem] md:text-sm uppercase hover:opacity-80 font-futura-medium tracking-widest"
                 >
                     AGENDA

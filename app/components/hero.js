@@ -95,7 +95,7 @@ export default function Hero() {
           </p>
 
           <Link
-            href="/agendar"
+            href="#Calendarhit"
             data-aos="fade-up"
             data-aos-delay="1000"
             data-aos-duration="1500"
@@ -114,19 +114,19 @@ export default function Hero() {
             data-aos-duration="1500"
             className="z-50 absolute bottom-5 right-0 md:bottom-10 md:right-16 flex flex-row bg-[#3C5954] gap-3 p-3 rounded-xl opacity-0"
           >
-            <Link href="https://facebook.com" target="_blank">
+            <Link href="https://www.facebook.com/abraham.corelladuran.5/" target="_blank">
               <FaFacebookSquare
                 className="w-8 h-8 text-white hover:text-gray-300 transition-colors"
                 strokeWidth={2}
               />
             </Link>
-            <Link href="https://instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/abraham_corella/#" target="_blank">
               <AiFillInstagram
                 className="w-9 h-9 text-white hover:text-gray-300 transition-colors"
                 strokeWidth={2}
               />
             </Link>
-            <Link href="https://wa.me/1234567890" target="_blank">
+            <Link href="https://api.whatsapp.com/send?phone=50684249981" target="_blank">
               <FaWhatsappSquare
                 className="w-8 h-8 text-white hover:text-gray-300 transition-colors"
                 strokeWidth={2}
