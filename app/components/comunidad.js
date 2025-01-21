@@ -75,7 +75,7 @@ export default function comunidad() {
                             <p className="font-futura-medium font-[100] mb-4 text-md">Más que una barbería, ven a conocer este rincón en la ciudad donde podés relajarte, charlar y renovarte. Cada detalle está pensado para vos. </p>
                             <p className="font-futura-bold font-[600] mb-4 text-lg">Visítanos en San Rafael, Escazú. </p>
                             <div className="rounded-[10px] h-[100px] w-full border=[#ECDA98] border-2 mx-auto">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.707304126917!2d-84.06858842403952!3d9.958292490145022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e58846e0fb53%3A0xc23b75751d5a4681!2sTerciopelo%20Beauty%20Studio!5e0!3m2!1ses!2scr!4v1730997251038!5m2!1ses!2scr" className="w-full h-full" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d581.902987919208!2d-84.13350077619765!3d9.930025504573948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd4cbb0e822f%3A0x97e3cb7331cb2119!2sAbraham%20Studio!5e0!3m2!1ses!2scr!4v1737471937083!5m2!1ses!2scr" className="w-full h-full" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div className="w-full h-[18rem] md:h-full bg-cover bg-center bg-[url('/assets/BgCard2.avif')]" />
@@ -154,10 +154,10 @@ export default function comunidad() {
             </div>
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="relative bg-[#72140A] rounded-md p-6 w-full max-w-3xl">
+                    <div className="relative bg-[#72140A] rounded-lg w-full max-w-3xl">
                         <button
                             onClick={() => setModalOpen(false)}
-                            className="absolute -top-1 right-0 text-4xl font-bold text-[#D5A153]"
+                            className="absolute -top-3 right-0 text-4xl font-bold text-[#D5A153] z-50"
                         >
                             &times;
                         </button>
@@ -165,7 +165,7 @@ export default function comunidad() {
                             <iframe
                                 src={iframeSrc}
                                 title="Contenido del iframe"
-                                className="absolute top-0 left-0 w-full h-full"
+                                className="absolute top-0 left-0 w-full h-full rounded-lg"
                                 frameBorder="0"
                                 allowFullScreen
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
