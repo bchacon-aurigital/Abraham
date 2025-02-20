@@ -20,19 +20,19 @@ const AbrahamSection = () => {
             TU CABELLO EN MANOS DE UN BARBERO CON <br className="hidden md:flex"/> 10 AÑOS DE EXPERIENCIA
           </h3>
 
-          <p className="text-white text-sm md:text-md max-w-xl font-futura-medium leading-snug">
+          {/* <p className="text-white text-sm md:text-md max-w-xl font-futura-medium leading-snug">
             Lorem ipsum dolor sit amet consectetur. Malesuada massa tempor
             iaculis urna. Faucibus nulla lectus augue turpis morbi auctor.
             Sagittis sagittis interdum sit dictum. Malesuada eu ut fusce
             fermentum est felis cursus enim porttitor. Dolor penatibus bibendum
             dolor laborits. Aliquet donec elementum fringilla sit. Mauris nisi
             ac orci rutrum.
-          </p>
+          </p> */}
 
           <div className="space-y-4">
-            <p className="text-[#3B7E73] font-futura-medium text-sm">
+            {/* <p className="text-[#3B7E73] font-futura-medium text-sm">
               -Abraham Corella
-            </p>
+            </p> */}
 
             <Link
               href="#Calendarhit"

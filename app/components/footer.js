@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -37,11 +38,16 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center overflow-hidden md:overflow-visible">
-              <img
-                src="/assets/LogoLoading.svg"
-                alt="Abraham Studio"
-                className="h-36"
-              />
+              <div className="relative w-auto h-36 md:h-44 lg:h-64  aspect-square">
+                <Image
+                  src="/assets/LogoLoading.svg"
+                  alt="Abraham Studio"
+                  fill
+                  priority
+                  className="object-contain"
+                  sizes="144px"
+                />
+              </div>
               <div className="border-b-[0.5px] border-white/60 pb-6 px-[30%]">
                 <nav className="flex gap-3 md:gap-8 text-xs">
                   <a

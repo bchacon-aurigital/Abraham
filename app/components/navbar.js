@@ -37,13 +37,16 @@ export default function Navbar() {
 
         <div className="flex flex-col items-center">
           <Link href="/">
-            <Image
-              src="/assets/logo.png"
-              alt="Bgicon7"
-              width={180}
-              height={120}
-              className="object-contain cursor-pointer w-36 md:w-auto"
-            />
+          <div className="relative w-24 sm:w-48 lg:w-96 h-16 md:h-24">
+          <Image
+            src="/assets/logo.svg"
+            alt="AbrahamStudio"
+            fill
+            priority
+            className="object-contain"
+            sizes="(max-width: 768px) 96px, 192px"
+          />
+          </div>
           </Link>
         </div>
 

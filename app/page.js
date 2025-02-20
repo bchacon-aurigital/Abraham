@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import Image from 'next/image';
 
 // Importaciones dinámicas (con ssr deshabilitado para asegurar que corren en cliente)
 const Navbar = dynamic(() => import("./components/navbar"), { ssr: false });
@@ -34,12 +35,17 @@ export default function Home() {
   if (loading) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-[#3C5954] z-50">
-        <img
+      <div className="relative w-[50vh] aspect-square">
+        <Image
           src="/assets/LogoLoading.svg"
           alt="Loading..."
-          className="w-[50vh]"
+          fill
+          priority
+          className="object-contain"
+          sizes="50vh"
         />
       </div>
+    </div>
     );
   }
 
