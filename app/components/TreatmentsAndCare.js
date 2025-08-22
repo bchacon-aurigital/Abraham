@@ -38,7 +38,7 @@ export default function TreatmentsAndCare() {
       >
         tratamientos y cuidados
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-40 md:grid-rows-9 gap-3 w-full h-[90rem] md:h-[57em] p-4 mx-auto max-w-7xl">
+      <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-40 md:grid-rows-12 gap-3 w-full h-[110rem] md:h-[72em] p-4 mx-auto max-w-7xl">
         <div
           className="col-span-2 row-span-6 md:row-span-4 relative group text-white font-bold"
           data-aos="fade-down"
@@ -52,6 +52,7 @@ export default function TreatmentsAndCare() {
           />
           <div className="absolute bottom-0 z-10 p-4">
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">CORTE DE CABELLO</h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">₡12,000</p>
             <p
               className="
               max-h-0
@@ -100,6 +101,7 @@ export default function TreatmentsAndCare() {
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">
               AFEITADO ESTILIZADO
             </h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">₡10,000</p>
             <p
               className="
               max-h-0
@@ -144,6 +146,7 @@ export default function TreatmentsAndCare() {
           />
           <div className="absolute bottom-0 z-10 p-4">
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">CORTE Y BARBA</h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">₡18,000</p>
             <p
               className="
       max-h-0
@@ -192,6 +195,7 @@ export default function TreatmentsAndCare() {
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">
               MASCARILLAS Y CUIDADO PERSONAL
             </h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">₡10,000</p>
             <p
               className="
               max-h-0
@@ -237,6 +241,7 @@ export default function TreatmentsAndCare() {
           />
           <div className="absolute bottom-0 z-10 p-4">
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">TINTE & FREE STYLE</h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">Precio según valoración</p>
             <p
               className="
       max-h-0
@@ -278,6 +283,8 @@ export default function TreatmentsAndCare() {
             <h3 className="mb-2 font-cp-regular text-md md:text-lg">
               ASESORÍA Y EDUCACIÓN
             </h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">₡100,000/mes</p>
+            <p className="mb-2 text-xs md:text-sm font-futura-medium text-white">Curso de 6 meses, 1 clase por semana (4h)</p>
             <p
               className="
       max-h-0
@@ -305,7 +312,67 @@ export default function TreatmentsAndCare() {
             </p>
           </div>
         </div>
+
+        {/* New Tratamiento Capilar Card */}
+        <div
+          className="col-span-2 md:col-span-3 row-span-6 md:row-span-12 relative group text-white font-bold"
+          data-aos="fade-up"
+        >
+          <div className="absolute inset-0 bg-black/30 z-10 w-full h-full" />
+          <img
+            className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            src="/assets/ServiceImage7.avif"
+            alt="Tratamiento Capilar"
+          />
+          <div className="absolute bottom-0 z-10 p-4">
+            <h3 className="mb-2 font-cp-regular text-md md:text-lg">TRATAMIENTO CAPILAR</h3>
+            <p className="mb-2 text-sm md:text-md font-cp-bold text-white">Kit de ampollas para la pérdida de cabello - ₡30,000</p>
+            <p
+              className="
+                max-h-0
+                group-hover:max-h-[1000px]
+                overflow-hidden
+                opacity-0
+                translate-y-4
+                group-hover:opacity-100
+                group-hover:translate-y-0
+                text-xs md:text-sm font-futura-medium leading-snug font-[100]
+                max-w-2xl
+              "
+              style={{
+                transition: `
+                  max-height 2s ease-in-out,
+                  opacity 3s ease-in-out,
+                  transform 2s ease-in-out
+                `,
+              }}
+            >
+              Recupera la fortaleza de tu cabello. Nuestro kit especializado de ampollas para la pérdida de cabello combate la caída desde la raíz, utilizando ingredientes activos que estimulan el crecimiento y fortalecen el folículo. Con resultados visibles y duraderos, devolvemos a tu cabello su vitalidad natural.
+            </p>
+          </div>
+        </div>
+
+        {/* Ver Agenda button card - desktop only */}
+        <Link
+          href="#Calendarhit"
+          className="hidden md:block col-span-1 row-span-12 bg-red-900 relative cursor-pointer group hover:scale-105 transition-transform duration-300"
+          data-aos="fade-up"
+        >
+          <div className="absolute inset-0 bg-black/55 z-10 w-full h-full rounded-md" />
+          <img
+            className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            style={{ objectPosition: "30% center" }}
+            src="/assets/Service.avif"
+            alt="Service background"
+          />
+          <div className="absolute inset-0 flex items-center justify-center z-20">
+            <h3 className="text-white font-cp-bold text-lg md:text-xl text-center tracking-wider">
+              VER AGENDA
+            </h3>
+          </div>
+        </Link>
       </div>
+
       <div className="flex justify-center mb-5">
         <Link
           href="#Calendarhit"
