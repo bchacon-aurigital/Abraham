@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "imagehover.css/css/imagehover.min.css";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://abrahamstudio.calendarhit.com"),
   title: "Abraham Studio | Barbería y estética masculina",
   description: "En Abraham Studio, encontrarás la comunidad necesaria para ayudarte a lucir y sentirte en tu mejor momento.",
   keywords: "barbería, estética, abraham studio, cortes, cuidado, barbero, afeitado, estilo, masculina, masculino",
@@ -62,10 +65,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es"> 
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <html lang="es" suppressHydrationWarning> 
+    <GoogleTagManager gtmId="GTM-MBW74K45" />
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       {children}
+      <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

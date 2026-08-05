@@ -8,7 +8,6 @@ const nextConfig = {
       minimumCacheTTL: 60,
     },
     reactStrictMode: true,
-    swcMinify: true,
   };
   
   export default nextConfig;
