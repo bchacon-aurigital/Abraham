@@ -19,6 +19,14 @@ export const metadata = {
   title: "Abraham Studio | Barbería y estética masculina",
   description: "En Abraham Studio, encontrarás la comunidad necesaria para ayudarte a lucir y sentirte en tu mejor momento.",
   keywords: "barbería, estética, abraham studio, cortes, cuidado, barbero, afeitado, estilo, masculina, masculino",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Abraham Studio | Barbería y estética masculina",
     description: "En Abraham Studio, encontrarás la comunidad necesaria para ayudarte a lucir y sentirte en tu mejor momento.",
@@ -26,9 +34,9 @@ export const metadata = {
     siteName: "Abraham Studio | Barbería y estética masculina",
     images: [
       {
-        url: "/HeroBG.png", 
+        url: "/og-cover.jpg", 
         width: 1200,
-        height: 630,
+        height: 700,
         alt: "Abraham Barber Shop"
       }
     ],
@@ -44,7 +52,7 @@ export const metadata = {
     "@context": "https://schema.org",
     "@type": "BarberShop",
     "name": "Abraham Studio | Barbería y estética masculina",
-    "image": "https://abrahamstudio.calendarhit.com/HeroBG.png", 
+    "image": "https://abrahamstudio.calendarhit.com/og-cover.jpg", 
     "url": "https://abrahamstudio.calendarhit.com/",
     "telephone": "+50684249981",       
     "address": {
